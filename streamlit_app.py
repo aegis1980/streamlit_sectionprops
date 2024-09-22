@@ -61,6 +61,7 @@ if uploaded_file is not None:
     section.display_results(fmt = '.2f')
     sys.stdout = original_stdout
 
+
     code = string_io.getvalue()
     string_io.close()
 
