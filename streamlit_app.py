@@ -50,6 +50,8 @@ if uploaded_file is not None:
     with st.spinner('Talk amongst yourselves. I may be some time...'):
         section.calculate_geometric_properties()
         section.calculate_plastic_properties()
+        section.calculate_warping_properties()
+        section.get_j()
         section.plot_centroids(ax = ax, render = False)
 
     section.plot_centroids(ax = ax, render = False)
